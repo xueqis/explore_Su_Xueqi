@@ -1,3 +1,6 @@
+##Prof G - Will not work with my test case.
+data("diamonds")
+explore2(diamonds, 0.3, 'grid', c(10, 25, 50))
 
 #For your information, the HW8 part starts from line 315
 
