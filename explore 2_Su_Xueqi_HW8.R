@@ -1,6 +1,6 @@
 ##Prof G - Will not work with my test case.
-data("diamonds")
-explore2(diamonds, 0.3, 'grid', c(10, 25, 50))
+##data("diamonds")
+##explore2(diamonds, 0.3, 'grid', c(10, 25, 50))
 
 #For your information, the HW8 part starts from line 315
 
@@ -58,7 +58,7 @@ num_rsquare <- function(data) {
       #apply double for loop here to pair any two numerical variables
       pairname = c(pairname, paste(num_name[i], num_name[j], sep = "-"))  #paste any two numerical variables, and separate the names
       #of these two variables by "-"
-      rSquare = c(rSquare, paste(summary(lm(num_data[,j]~num_data[,i], num_data))$r.squared))
+      rSquare = c(rSquare, paste(summary(lm(num_data[[j]]~num_data[[i]], num_data))$r.squared))
       #calculate the r-Square values of each pair 
       
     }
@@ -391,7 +391,7 @@ explore2 <- function(data, threshold=0.5, switch="off", binVec=30){
 }
 
 #check 
-explore2(diamonds,"hello", 1.5)
+##explore2(diamonds,"hello", 1.5)
 
 
 
